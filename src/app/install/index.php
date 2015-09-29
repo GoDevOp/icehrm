@@ -11,7 +11,7 @@ if($isConfigFileExists){
 	}	
 }else{
 	$file = fopen(CLIENT_APP_PATH."config.php","w");
-	echo fwrite($file,"");	
+	fwrite($file,"");	
 	fclose($file);
 }
 
